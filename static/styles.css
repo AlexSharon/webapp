@@ -1,0 +1,50 @@
+body {
+    background-color: #ACACAE;
+    height: 1500px;
+}
+
+.container-fluid {
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container {
+    /* center contents */
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 52px;
+    text-align: left;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#IMG3 {
+    width: 120px;
+}
+
+#IMG4 {
+    height: 160px;
+}
+
+
+#map { /*map-canvas*/
+
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    margin-top: 80px;
+
+    /* disable scrollbars */
+    overflow: hidden;
+
+    /* no padding*/
+    padding: 0;
+}
+

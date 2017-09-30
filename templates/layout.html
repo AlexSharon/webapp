@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+        <script src="static/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyColUopP9r4e3Razaf-BYLVobB1HY6ZlVg&callback=initMap"
+        async defer></script>
+
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{ url_for('index') }}">Web Page of Aleksey Sh</a>
+                </div>
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('page1') }}">Page 1</a></li>
+                    <li><a href="{{ url_for('location') }}">Location</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('register') }}"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+                    <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <main>
+                {% block main %}{% endblock %}
+        </main>
+
+    </body>
+</html>
