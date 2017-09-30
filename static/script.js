@@ -1,12 +1,3 @@
-$( document ).ready(function() {
-    console.log( "document loaded" );
-});
-
-$( window ).on( "load", function() {
-    console.log( "window loaded" );
-});
-
-
 var map;
 var moscow = {lat: 55.745, lng: 37.621};
 var home = {lat: 55.639246, lng: 37.600816};

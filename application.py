@@ -58,5 +58,3 @@ def login():
 
     if request.method == "POST":
         return redirect(url_for("index"))
-
-        #test
